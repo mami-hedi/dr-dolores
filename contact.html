@@ -33,28 +33,39 @@
     </style>
 </head>
 <body class="font-sans antialiased">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <i data-feather="smile" class="text-primary h-8 w-8"></i>
-                    <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-primary">Accueil</a>
-                    <a href="services.html" class="text-gray-600 hover:text-primary">Services</a>
-                    <a href="apropos.html" class="text-gray-600 hover:text-primary">À Propos</a>
-                    <a href="contact.html" class="text-primary font-semibold">Contact</a>
-                </div>
-                <div class="md:hidden">
-                    <button class="text-gray-600 focus:outline-none">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
+     <!-- Navigation -->
+<nav class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <i data-feather="smile" class="text-primary h-8 w-8"></i>
+            <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
         </div>
-    </nav>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-primary font-semibold">Accueil</a>
+            <a href="services.html" class="text-gray-600 hover:text-primary">Services</a>
+            <a href="apropos.html" class="text-gray-600 hover:text-primary">À Propos</a>
+            <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+        </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 px-6 pb-4 md:hidden">
+        <a href="index.html" class="text-primary font-semibold block py-2">Accueil</a>
+        <a href="services.html" class="text-gray-600 hover:text-primary block py-2">Services</a>
+        <a href="apropos.html" class="text-gray-600 hover:text-primary block py-2">À Propos</a>
+        <a href="contact.html" class="text-gray-600 hover:text-primary block py-2">Contact</a>
+    </div>
+</nav>
 
     <!-- Contact Hero -->
     <section class="bg-primary bg-opacity-10 py-20">
@@ -329,5 +340,13 @@
             });
         });
     </script>
+    <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - SmileCare</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A7C7E7',
+                        secondary: '#F6D1C1',
+                        lightgray: '#F4F4F4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i data-feather="smile" class="text-primary h-8 w-8"></i>
+                    <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">Accueil</a>
+                    <a href="services.html" class="text-primary font-semibold">Services</a>
+                    <a href="apropos.html" class="text-gray-600 hover:text-primary">À Propos</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="bg-primary bg-opacity-10 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos services dentaires</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Découvrez l'ensemble de nos soins dentaires réalisés avec professionnalisme et douceur pour préserver votre santé bucco-dentaire.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="tooth" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Soins conservateurs</h3>
+                    <p class="text-gray-600 mb-4">Détartrage, traitement des caries, dévitalisation et obturations pour préserver vos dents naturelles.</p>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Composites esthétiques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Inlays/Onlays</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Traitement des gencives</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-secondary bg-opacity-10 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="star" class="text-secondary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Esthétique dentaire</h3>
+                    <p class="text-gray-600 mb-4">Des solutions pour embellir votre sourire et renforcer votre confiance en vous.</p>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Blanchiment professionnel</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Facettes céramiques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Éclaircissement dentaire</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="align-center" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Orthodontie</h3>
+                    <p class="text-gray-600 mb-4">Correction de l'alignement dentaire pour enfants et adultes avec des techniques innovantes.</p>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Appareils invisibles</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Bagues céramiques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Traitements pour adultes</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-secondary bg-opacity-10 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="alert-triangle" class="text-secondary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Urgences dentaires</h3>
+                    <p class="text-gray-600 mb-4">Prise en charge rapide des douleurs et traumatismes dentaires avec créneaux d'urgence réservés.</p>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Douleurs aiguës</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Dents cassées</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Abcès dentaires</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="git-commit" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Implants dentaires</h3>
+                    <p class="text-gray-600 mb-4">Remplacement durable et esthétique des dents manquantes avec des implants de haute qualité.</p>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Implants unitaires</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Prothèses sur implants</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Greffe osseuse</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-secondary bg-opacity-10 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="shield" class="text-secondary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Dentisterie pédiatrique</h3>
+                    <p class="text-gray-600 mb-4">Approche douce et ludique pour familiariser les enfants avec les soins dentaires sans stress.</p>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Premières consultations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Scellement de sillons</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary h-4 w-4 mr-2 mt-0.5"></i>
+                            <span>Orthodontie précoce</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="bg-lightgray py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Technologie de pointe</h2>
+                    <p class="text-gray-600 mb-4">Notre cabinet est équipé des dernières avancées technologiques pour des diagnostics précis et des soins moins invasifs.</p>
+                    <ul class="text-gray-600 space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-primary h-5 w-5 mr-2 mt-0.5"></i>
+                            <span>Rayons X numériques à faible radiation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-primary h-5 w-5 mr-2 mt-0.5"></i>
+                            <span>Caméra intra-orale pour visualisation en direct</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-primary h-5 w-5 mr-2 mt-0.5"></i>
+                            <span>Anesthésie sans piqûre (The Wand)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-primary h-5 w-5 mr-2 mt-0.5"></i>
+                            <span>Logiciel de planification de traitement 3D</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <img src="http://static.photos/technology/640x360/7" alt="Technologie dentaire" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Un sourire sain pour une vie épanouie</h2>
+            <p class="text-white text-opacity-90 mb-8 max-w-2xl mx-auto">Prenez rendez-vous dès maintenant pour un bilan personnalisé et des conseils adaptés à votre situation.</p>
+            <a href="contact.html" class="bg-white text-primary font-semibold py-3 px-8 rounded-full inline-flex items-center hover:bg-gray-100 transition duration-300">
+                <i data-feather="phone" class="mr-2"></i> 01 23 45 67 89
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="smile" class="text-primary h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold">SmileCare</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">Votre santé bucco-dentaire entre de bonnes mains.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary transition">Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition">Services</a></li>
+                       <li><a href="apropos.html" class="text-gray-300 hover:text-primary transition">A propos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li class="flex justify-between">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Samedi</span>
+                            <span>9h - 13h</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <address class="text-gray-300 text-sm not-italic">
+                        <p class="mb-2">123 Avenue des Dentistes</p>
+                        <p class="mb-2">75015 Paris, France</p>
+                        <p>Email: contact@smilecare.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 SmileCare - Dr. Dolores Sanchez. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

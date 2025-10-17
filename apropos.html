@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - SmileCare</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A7C7E7',
+                        secondary: '#F6D1C1',
+                        lightgray: '#F4F4F4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .about-card {
+            transition: all 0.3s ease;
+        }
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 2.5rem;
+            height: 100%;
+            width: 2px;
+            background: #A7C7E7;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i data-feather="smile" class="text-primary h-8 w-8"></i>
+                    <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">Accueil</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary">Services</a>
+                    <a href="apropos.html" class="text-primary font-semibold">À Propos</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="bg-primary bg-opacity-10 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre histoire et valeurs</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Découvrez l'engagement de SmileCare pour des soins dentaires de qualité depuis 2010.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <img src="http://static.photos/medical/640x360/15" alt="Cabinet SmileCare" class="rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Notre cabinet</h2>
+                    <p class="text-gray-600 mb-4">Fondé en 2010 par le Dr. Dolores Sanchez, SmileCare s'est rapidement imposé comme une référence en matière de soins dentaires à Paris. Notre cabinet moderne allie technologie de pointe et approche humaine pour offrir une expérience dentaire exceptionnelle.</p>
+                    <p class="text-gray-600 mb-6">Situé dans le 15ème arrondissement, notre espace a été pensé pour le confort et le bien-être de nos patients, avec une ambiance chaleureuse et des équipements dernier cri.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-primary font-bold text-2xl mb-1">12+</div>
+                            <div class="text-gray-600 text-sm">Années d'expérience</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-primary font-bold text-2xl mb-1">5000+</div>
+                            <div class="text-gray-600 text-sm">Patients satisfaits</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="bg-lightgray py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Notre parcours</h2>
+            <div class="max-w-2xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="relative timeline-item pl-12 pb-8">
+                    <div class="absolute left-0 top-0 bg-primary text-white rounded-full h-10 w-10 flex items-center justify-center">
+                        <i data-feather="home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">2010</h3>
+                    <p class="text-gray-600">Ouverture du cabinet SmileCare avec une équipe de 3 personnes dans le 15ème arrondissement de Paris.</p>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="relative timeline-item pl-12 pb-8">
+                    <div class="absolute left-0 top-0 bg-primary text-white rounded-full h-10 w-10 flex items-center justify-center">
+                        <i data-feather="plus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">2014</h3>
+                    <p class="text-gray-600">Extension des locaux et création d'un deuxième poste de soin pour répondre à la demande croissante.</p>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="relative timeline-item pl-12 pb-8">
+                    <div class="absolute left-0 top-0 bg-primary text-white rounded-full h-10 w-10 flex items-center justify-center">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">2017</h3>
+                    <p class="text-gray-600">Obtention du label "Qualité Dentaire" décerné par l'Ordre National des Chirurgiens Dentistes.</p>
+                </div>
+                
+                <!-- Timeline Item 4 -->
+                <div class="relative timeline-item pl-12 pb-8">
+                    <div class="absolute left-0 top-0 bg-primary text-white rounded-full h-10 w-10 flex items-center justify-center">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">2020</h3>
+                    <p class="text-gray-600">Équipe élargie à 6 professionnels et mise en place d'un service d'urgence dentaire 24/7.</p>
+                </div>
+                
+                <!-- Timeline Item 5 -->
+                <div class="relative timeline-item pl-12">
+                    <div class="absolute left-0 top-0 bg-primary text-white rounded-full h-10 w-10 flex items-center justify-center">
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">2023</h3>
+                    <p class="text-gray-600">Rénovation complète du cabinet avec des équipements numériques dernier cri et une salle d'attente repensée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nos valeurs</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="about-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="heart" class="text-primary h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Écoute et empathie</h3>
+                    <p class="text-gray-600">Nous prenons le temps de comprendre vos besoins et vos craintes pour adapter nos soins à chaque patient.</p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="about-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-secondary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="shield" class="text-secondary h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Sécurité avant tout</h3>
+                    <p class="text-gray-600">Protocoles d'hygiène stricts et matériel stérilisé pour garantir votre sécurité à chaque visite.</p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="about-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="zap" class="text-primary h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Innovation technologique</h3>
+                    <p class="text-gray-600">Nous investissons régulièrement dans des équipements de pointe pour des soins moins invasifs et plus précis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-primary bg-opacity-5 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Ils nous font confiance</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary bg-opacity-20 p-2 rounded-full mr-4">
+                            <i data-feather="user" class="text-secondary h-5 w-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Marie D.</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Je suis patiente chez SmileCare depuis son ouverture. L'équipe est toujours aussi professionnelle et attentionnée après toutes ces années."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary bg-opacity-20 p-2 rounded-full mr-4">
+                            <i data-feather="user" class="text-secondary h-5 w-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Thomas L.</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Ce qui m'a convaincu chez SmileCare, c'est leur transparence sur les soins proposés et leur volonté de trouver des solutions adaptées à mon budget."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Prêt à nous rencontrer ?</h2>
+            <p class="text-white text-opacity-90 mb-8 max-w-2xl mx-auto">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos soins dentaires.</p>
+            <a href="contact.html" class="bg-white text-primary font-semibold py-3 px-8 rounded-full inline-flex items-center hover:bg-gray-100 transition duration-300">
+                <i data-feather="phone" class="mr-2"></i> 01 23 45 67 89
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="smile" class="text-primary h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold">SmileCare</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">Votre santé bucco-dentaire entre de bonnes mains.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary transition">Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition">Services</a></li>
+                        <li><a href="apropos.html" class="text-gray-300 hover:text-primary transition">À Propos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li class="flex justify-between">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Samedi</span>
+                            <span>9h - 13h</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <address class="text-gray-300 text-sm not-italic">
+                        <p class="mb-2">123 Avenue des Dentistes</p>
+                        <p class="mb-2">75015 Paris, France</p>
+                        <p>Email: contact@smilecare.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 SmileCare - Dr. Dolores Sanchez. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

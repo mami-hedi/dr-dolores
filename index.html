@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileCare - Dr. Dolores Sanchez</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A7C7E7',
+                        secondary: '#F6D1C1',
+                        lightgray: '#F4F4F4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: url('http://static.photos/medical/1200x630/5');
+            background-size: cover;
+            background-position: center;
+        }
+        .appointment-btn {
+            transition: all 0.3s ease;
+        }
+        .appointment-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i data-feather="smile" class="text-primary h-8 w-8"></i>
+                    <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary font-semibold">Accueil</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary">Services</a>
+                    <a href="apropos.html" class="text-gray-600 hover:text-primary">À Propos</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative">
+        <div class="absolute inset-0 bg-white bg-opacity-70"></div>
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Votre sourire est notre priorité</h1>
+                <p class="text-lg text-gray-600 mb-8">Le Dr. Dolores Sanchez et son équipe vous accueillent dans un cadre moderne et chaleureux pour des soins dentaires personnalisés.</p>
+                <a href="contact.html" class="appointment-btn bg-primary hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full inline-flex items-center">
+                    <i data-feather="calendar" class="mr-2"></i> Prendre rendez-vous
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="bg-lightgray py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nos services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="tooth" class="text-primary h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Soins dentaires</h3>
+                    <p class="text-gray-600">Des soins préventifs et curatifs adaptés à chaque patient pour une santé bucco-dentaire optimale.</p>
+                    <a href="services.html" class="mt-4 inline-block text-primary font-medium hover:underline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="bg-secondary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="star" class="text-secondary h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Blanchiment</h3>
+                    <p class="text-gray-600">Retrouvez un sourire éclatant grâce à nos techniques de blanchiment professionnel et sans danger.</p>
+                    <a href="services.html" class="mt-4 inline-block text-primary font-medium hover:underline">En savoir plus</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="align-center" class="text-primary h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Orthodontie</h3>
+                    <p class="text-gray-600">Des solutions d'orthodontie adaptées à tous les âges pour un alignement parfait de vos dents.</p>
+                    <a href="services.html" class="mt-4 inline-block text-primary font-medium hover:underline">En savoir plus</a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="text-primary font-semibold hover:underline flex items-center justify-center">
+                    Voir tous nos services <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <img src="http://static.photos/people/640x360/10" alt="Dr. Dolores Sanchez" class="rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Dr. Dolores Sanchez</h2>
+                    <p class="text-gray-600 mb-4">Diplômée avec distinction de l'Université de Paris Descartes, le Dr. Sanchez a plus de 15 ans d'expérience en chirurgie dentaire.</p>
+                    <p class="text-gray-600 mb-6">Passionnée par son métier, elle suit régulièrement des formations pour offrir à ses patients les techniques les plus récentes et les moins invasives.</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="award" class="text-primary h-5 w-5"></i>
+                        </div>
+                        <p class="text-gray-600">Membre de l'Ordre National des Chirurgiens Dentistes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-primary bg-opacity-5 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Témoignages</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary bg-opacity-20 p-2 rounded-full mr-4">
+                            <i data-feather="user" class="text-secondary h-5 w-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Marie D.</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Le Dr. Sanchez a su me mettre à l'aise dès le premier rendez-vous. Ses soins sont minutieux et indolores. Je recommande vivement !"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary bg-opacity-20 p-2 rounded-full mr-4">
+                            <i data-feather="user" class="text-secondary h-5 w-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Jean P.</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                                <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Cabinet moderne et équipe très professionnelle. Après plusieurs années sans consulter, j'ai enfin retrouvé confiance en mon dentiste."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Prenez rendez-vous dès aujourd'hui</h2>
+            <p class="text-white text-opacity-90 mb-8 max-w-2xl mx-auto">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos soins dentaires.</p>
+            <a href="contact.html" class="bg-white text-primary font-semibold py-3 px-8 rounded-full inline-flex items-center hover:bg-gray-100 transition duration-300">
+                <i data-feather="phone" class="mr-2"></i> 01 23 45 67 89
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="smile" class="text-primary h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold">SmileCare</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">Votre santé bucco-dentaire entre de bonnes mains.</p>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary transition">Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition">Services</a></li>
+                        <li><a href="apropos.html" class="text-gray-300 hover:text-primary transition">A propos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li class="flex justify-between">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Samedi</span>
+                            <span>9h - 13h</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Dimanche</span>
+                            <span>Fermé</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <address class="text-gray-300 text-sm not-italic">
+                        <p class="mb-2">123 Avenue des Dentistes</p>
+                        <p class="mb-2">75015 Paris, France</p>
+                        <p class="mb-2">Tel: 01 23 45 67 89</p>
+                        <p>Email: contact@smilecare.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 SmileCare - Dr. Dolores Sanchez. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

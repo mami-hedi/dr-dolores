@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe - SmileCare</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A7C7E7',
+                        secondary: '#F6D1C1',
+                        lightgray: '#F4F4F4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-img {
+            transition: all 0.3s ease;
+        }
+        .team-card:hover .team-img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i data-feather="smile" class="text-primary h-8 w-8"></i>
+                    <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">Accueil</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary">Services</a>
+                    <a href="team.html" class="text-primary font-semibold">Équipe</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Team Hero -->
+    <section class="bg-primary bg-opacity-10 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre équipe dévouée</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Une équipe de professionnels passionnés et expérimentés, à votre écoute pour des soins dentaires personnalisés.</p>
+        </div>
+    </section>
+
+    <!-- Main Team -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-12">Rencontrez notre équipe</h2>
+            
+            <!-- Dr. Dolores -->
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <img src="http://static.photos/people/640x360/10" alt="Dr. Dolores Sanchez" class="team-img w-full h-auto">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Dr. Dolores Sanchez</h3>
+                    <p class="text-secondary font-medium mb-4">Chirurgien-Dentiste - Fondatrice</p>
+                    <p class="text-gray-600 mb-4">Diplômée de l'Université de Paris Descartes en 2005, le Dr. Sanchez s'est spécialisée en esthétique dentaire et en implantologie. Passionnée par son métier, elle suit régulièrement des formations pour offrir à ses patients les techniques les plus récentes.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">Implantologie</span>
+                        <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">Esthétique dentaire</span>
+                        <span class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm">Orthodontie</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-primary transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition">
+                            <i data-feather="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Team Members -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Member 1 -->
+                <div class="team-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/people/640x360/11" alt="Dr. Jean Dupont" class="team-img w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Jean Dupont</h3>
+                        <p class="text-secondary text-sm mb-3">Chirurgien-Dentiste - Pédodontie</p>
+                        <p class="text-gray-600 text-sm mb-4">Spécialiste des soins dentaires pour enfants, avec une approche douce et ludique pour des consultations sans stress.</p>
+                        <div class="flex space-x-3">
+                            <span class="bg-primary bg-opacity-10 text-primary px-2 py-0.5 rounded-full text-xs">Pédodontie</span>
+                            <span class="bg-primary bg-opacity-10 text-primary px-2 py-0.5 rounded-full text-xs">Orthodontie</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Member 2 -->
+                <div class="team-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/people/640x360/12" alt="Sophie Martin" class="team-img w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Sophie Martin</h3>
+                        <p class="text-secondary text-sm mb-3">Hygieniste Dentaire</p>
+                        <p class="text-gray-600 text-sm mb-4">Experte en prévention et en détartrage, elle prodigue des conseils personnalisés pour une hygiène bucco-dentaire optimale.</p>
+                        <div class="flex space-x-3">
+                            <span class="bg-primary bg-opacity-10 text-primary px-2 py-0.5 rounded-full text-xs">Prévention</span>
+                            <span class="bg-primary bg-opacity-10 text-primary px-2 py-0.5 rounded-full text-xs">Blanchiment</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Member 3 -->
+                <div class="team-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/people/640x360/13" alt="Marie Leroy" class="team-img w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Marie Leroy</h3>
+                        <p class="text-secondary text-sm mb-3">Assistante Dentaire</p>
+                        <p class="text-gray-600 text-sm mb-4">Véritable pilier du cabinet, elle assure le bon déroulement des soins et le confort des patients avec bienveillance.</p>
+                        <div class="flex space-x-3">
+                            <span class="bg-primary bg-opacity-10 text-primary px-2 py-0.5 rounded-full text-xs">Accueil</span>
+                            <span class="bg-primary bg-opacity-10 text-primary px-2 py-0.5 rounded-full text-xs">Stérilisation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="bg-lightgray py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Notre philosophie</h2>
+                <p class="text-gray-600 mb-8">Chez SmileCare, nous croyons que chaque patient mérite une attention personnalisée et des soins dentaires de la plus haute qualité. Notre mission est de créer une expérience dentaire positive, dans un environnement chaleureux et rassurant.</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full inline-block mb-4">
+                            <i data-feather="heart" class="text-primary h-6 w-6"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Bienveillance</h3>
+                        <p class="text-gray-600 text-sm">Une écoute attentive et des soins prodigués avec douceur.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="bg-secondary bg-opacity-10 p-3 rounded-full inline-block mb-4">
+                            <i data-feather="award" class="text-secondary h-6 w-6"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Excellence</h3>
+                        <p class="text-gray-600 text-sm">Des traitements réalisés avec le plus grand professionnalisme.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full inline-block mb-4">
+                            <i data-feather="shield" class="text-primary h-6 w-6"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Sécurité</h3>
+                        <p class="text-gray-600 text-sm">Un protocole d'hygiène strict pour votre sécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Prêt à prendre rendez-vous ?</h2>
+            <p class="text-white text-opacity-90 mb-8 max-w-2xl mx-auto">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos soins dentaires.</p>
+            <a href="contact.html" class="bg-white text-primary font-semibold py-3 px-8 rounded-full inline-flex items-center hover:bg-gray-100 transition duration-300">
+                <i data-feather="phone" class="mr-2"></i> 01 23 45 67 89
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="smile" class="text-primary h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold">SmileCare</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">Votre santé bucco-dentaire entre de bonnes mains.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary transition">Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition">Services</a></li>
+                        <li><a href="team.html" class="text-gray-300 hover:text-primary transition">Équipe</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li class="flex justify-between">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Samedi</span>
+                            <span>9h - 13h</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <address class="text-gray-300 text-sm not-italic">
+                        <p class="mb-2">123 Avenue des Dentistes</p>
+                        <p class="mb-2">75015 Paris, France</p>
+                        <p>Email: contact@smilecare.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 SmileCare - Dr. Dolores Sanchez. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SmileCare</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A7C7E7',
+                        secondary: '#F6D1C1',
+                        lightgray: '#F4F4F4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .contact-map {
+            height: 100%;
+            min-height: 300px;
+        }
+        .form-input:focus {
+            border-color: #A7C7E7;
+            box-shadow: 0 0 0 3px rgba(167, 199, 231, 0.2);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i data-feather="smile" class="text-primary h-8 w-8"></i>
+                    <span class="ml-2 text-xl font-bold text-gray-800">SmileCare</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">Accueil</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary">Services</a>
+                    <a href="apropos.html" class="text-gray-600 hover:text-primary">À Propos</a>
+                    <a href="contact.html" class="text-primary font-semibold">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="bg-primary bg-opacity-10 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contactez-nous</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Notre équipe est à votre écoute pour répondre à vos questions et prendre rendez-vous.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Envoyez-nous un message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstname" class="block text-gray-700 font-medium mb-2">Prénom</label>
+                                <input type="text" id="firstname" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="lastname" class="block text-gray-700 font-medium mb-2">Nom</label>
+                                <input type="text" id="lastname" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Téléphone</label>
+                            <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
+                            <select id="subject" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary">
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="rdv">Prendre rendez-vous</option>
+                                <option value="urgence">Urgence dentaire</option>
+                                <option value="info">Demande d'information</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="bg-primary hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full w-full md:w-auto">
+                                Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                    <br/>
+                        <img src="./den.avif" alt="Cabinet dentaire">
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-8 h-full">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Nos coordonnées</h2>
+                        
+                        <!-- Contact Card -->
+                        <div class="bg-lightgray rounded-lg p-6 mb-8">
+                            <div class="flex items-start mb-6">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                    <i data-feather="map-pin" class="text-primary h-5 w-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Adresse</h3>
+                                    <p class="text-gray-600">123 Avenue des Dentistes<br>75015 Paris, France</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-6">
+                                <div class="bg-secondary bg-opacity-10 p-3 rounded-full mr-4">
+                                    <i data-feather="phone" class="text-secondary h-5 w-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Téléphone</h3>
+                                    <p class="text-gray-600">01 23 45 67 89</p>
+                                    <p class="text-gray-600 text-sm mt-1">Urgences: 06 12 34 56 78</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                    <i data-feather="mail" class="text-primary h-5 w-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-1">Email</h3>
+                                    <p class="text-gray-600">contact@smilecare.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map -->
+                        <div class="rounded-lg overflow-hidden shadow-sm contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926156382663!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1623258127653!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+                        </div>
+                        <br/>
+                        <img src="./chirurgien-dentiste.jpg" alt="Cabinet dentaire">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <!-- Hours Section -->
+<section class="bg-lightgray py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-left text-gray-800 mb-12">Nos horaires d'ouverture</h2>
+        <div class="max-w-md">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="divide-y divide-gray-200">
+                    <!-- Day 1 -->
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-gray-800">Lundi</span>
+                        <span class="text-gray-600">9h00 - 19h00</span>
+                    </div>
+                    <!-- Day 2 -->
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-gray-800">Mardi</span>
+                        <span class="text-gray-600">9h00 - 19h00</span>
+                    </div>
+                    <!-- Day 3 -->
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-gray-800">Mercredi</span>
+                        <span class="text-gray-600">9h00 - 19h00</span>
+                    </div>
+                    <!-- Day 4 -->
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-gray-800">Jeudi</span>
+                        <span class="text-gray-600">9h00 - 19h00</span>
+                    </div>
+                    <!-- Day 5 -->
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-gray-800">Vendredi</span>
+                        <span class="text-gray-600">9h00 - 19h00</span>
+                    </div>
+                    <!-- Day 6 -->
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-gray-800">Samedi</span>
+                        <span class="text-gray-600">9h00 - 13h00</span>
+                    </div>
+                    <!-- Day 7 -->
+                    <div class="flex justify-between items-center p-4 bg-secondary bg-opacity-10">
+                        <span class="font-medium text-gray-800">Dimanche</span>
+                        <span class="text-gray-600">Fermé</span>
+                    </div>
+                </div>
+            </div>
+            <p class="text-left text-gray-600 mt-6">
+                Pour les urgences en dehors des horaires d'ouverture, veuillez composer le 
+                <span class="font-semibold">06 12 34 56 78</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-12">Questions fréquentes</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+                        <span>Comment prendre rendez-vous ?</span>
+                        <i data-feather="chevron-down" class="text-primary h-5 w-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600">
+                        <p>Vous pouvez prendre rendez-vous en ligne via notre formulaire de contact, par téléphone au 01 23 45 67 89, ou directement à l'accueil de notre cabinet.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+                        <span>Quels sont les modes de paiement acceptés ?</span>
+                        <i data-feather="chevron-down" class="text-primary h-5 w-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600">
+                        <p>Nous acceptons les paiements par carte bancaire, chèque, espèce et virement. Nous travaillons avec de nombreuses mutuelles et proposons des facilités de paiement sur demande.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+                        <span>Que faire en cas d'urgence en dehors des heures d'ouverture ?</span>
+                        <i data-feather="chevron-down" class="text-primary h-5 w-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600">
+                        <p>En cas d'urgence dentaire en dehors de nos horaires d'ouverture, veuillez composer le 06 12 34 56 78. Pour les urgences très graves, rendez-vous directement aux urgences de l'hôpital le plus proche.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="smile" class="text-primary h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold">SmileCare</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">Votre santé bucco-dentaire entre de bonnes mains.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary transition">Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition">Services</a></li>
+                        <li><a href="apropos.html" class="text-gray-300 hover:text-primary transition">A propos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li class="flex justify-between">
+                            <span>Lundi - Vendredi</span>
+                            <span>9h - 19h</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Samedi</span>
+                            <span>9h - 13h</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <address class="text-gray-300 text-sm not-italic">
+                        <p class="mb-2">123 Avenue des Dentistes</p>
+                        <p class="mb-2">75015 Paris, France</p>
+                        <p>Email: contact@smilecare.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2025 SmileCare - Dr. Dolores Sanchez. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Simple FAQ toggle functionality
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
